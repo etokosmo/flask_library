@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Описание</title>
+</head>
+<body>
+<div style="margin-left: auto;
+    margin-right: auto;
+    width: 80%">
+    Веб приложение на Python+Flask для учета книг в библиотеке.
+    Приложение выполняет CRUD операции над базой данных.
+
+    <ul>
+        <li>url: /library/<br> method: GET<br>
+            Возвращает все книги.
+        </li>
+
+        <li>url: /library/<br> method: POST<br>
+            Добавляет книгу.
+        </li>
+
+        <li>url: /library/int:book_id/<br> method: GET<br>
+            Возвращает книгу по id.
+        </li>
+
+        <li>url: /library/string:author/<br> method: GET<br>
+            Возвращает все книги автора.
+        </li>
+
+        <li>url: /library/int:book_id/<br> method: PATCH<br>
+            Обновляет данные по книге по id.
+        </li>
+
+        <li>url: /library/int:book_id/<br> method: DELETE<br>
+            Удаляет книгу по id.
+        </li>
+    </ul>
+
+
+    Пример для POST/PATCH запроса:
+    <pre>
+    {
+        "author": {
+            "name": "Сидоров"
+        },
+        "title": "Книга 3"
+    }
+    </pre>
+</div>
+</body>
+</html>
