@@ -74,7 +74,7 @@ method: PATCH
 ```
 ```
 url: /library/int:book_id/
-method: DELETE<br>
+method: DELETE
 Удаляет книгу по id.
 ```
 
